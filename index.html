@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>レスポンシブデザインテンプレート</title>
+  <meta name="description" content="ディスクリプションを入力">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/ress.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="header-inside">
+      <h1 class="logo"><img src="http://placehold.jp/200x80.png?text=ロゴ画像" alt="ロゴ画像"></h1>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="#">施設案内</a></li>
+          <li><a href="#">お食事</a></li>
+          <li><a href="#">アクセス・周辺観光</a></li>
+          <li><a href="#">お問い合わせ</a></li>
+        </ul>
+      </nav>
+
+      <!-- コピペここから -->
+      <div class="mobile-nav">
+        <div class="gnav">
+          <div class="nav-toggle">
+              <div><span></span><span></span><span></span></div>
+          </div>
+        </div>
+        <div class="gnav-content">
+            <div class="outer">
+                <div class="margin-auto wrap-700">
+                    <h1 class="gnav-logo"><a href="https://wajimaya.but.jp/"><img src="http://placehold.jp/300x100.png?text=ロゴ画像" alt="ホテル和島屋"/></a></h1>
+                    <nav class="mobile-navigation">
+                        <ul class="mobile-main-nav">
+                            <li><a href="https://wajimaya.but.jp/">トップページ</a></li>
+                            <li><a href="rooms.html">お部屋紹介</a></li>
+                            <li><a href="facilities.html">館内施設</a></li>
+                            <li><a href="cuisine.html">手作り料理</a></li>
+                            <li><a href="charge.html">料金案内</a></li>
+                            <li><a href="access.html">アクセス・周辺</a></li>
+                            <li><a href="news.php">新着情報</a></li>
+                            <li><a href="https://www.yado-sagashi.net/yoyaku/plan/index2.jsp?beg&all&yid=42223335813314" target="_blank">オンライン予約</a></li>
+                        </ul>
+                    </nav>
+                    <div class="center pt-1em gnav-address pb-5em">
+                        <p class="pb-5em mobile-link">ホテル和島屋<br>
+                        〒329-2723 栃木県那須塩原市南町5-32<br>
+                        TEL：0287-36-2952<br>
+                        FAX：0287-36-2925<br>
+                        チェックイン：16:00～21:00<br>
+                        チェックアウト：～翌10:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-- コピペここまで -->
+
+    </div>
+  </header>
+
+  <section>
+    <div class="search-wrap">
+        <div class="outer">
+            <div class="wrap wrap-1200">
+                <div class="row" data-aos="fade-up">
+                    <div class="search-title">
+                        <h2>空室検索<br><span class="en">ROOM SEARCH</span></h2>
+                    </div>
+                    <div class="search">
+                        <div class="plan_form">
+                            <form method="POST" action="https://www.yado-sagashi.net/yoyaku/plan/index2.jsp" name="frmplist" target="_blank">
+                                <input type="hidden" name="yid" value="42223335813314">
+                                <div class="form_box">
+                                    <div class="check_in">
+                                        <p class="title">宿泊日</p>
+                                        <input type="text" size="10" maxlength="10" name="checkinday" id="datepicker" value="" readonly>
+                                    </div>
+                                    <div class="undecided">
+                                        <p class="title">日程未定</p>
+                                         <input type="checkbox" name="fixed" class="option-input" onclick="DateEnable();">
+                                    </div>
+                                    <div class="guests">
+                                        <p class="title">一室の人数</p>
+                                       	<select name="people"><option value="0" selected>未選択</option><option value="1">1名</option><option value="2">2名以上</option></select>
+                                    </div>
+                                    <div class="type">
+                                        <p class="title">部屋タイプ </p>
+                                        <select name="roomtype">
+	                                             <option value="0" selected>未選択</option>
+                                           <option value='1'>シングル</option>
+                                           <option value='2'>ツイン</option>
+                                           <option value='3'>ダブル</option>
+                                           <option value='6'>和室</option>
+                                        </select>
+                                    </div>
+                                    <div class="price">
+                                        <p class="title">ご予算</p>
+                                        <select name="tanka1">
+                                            <option value="0" selected="">気にしない</option>
+                                            <option value="1">6000円未満</option>
+                                            <option value="2">6000円</option>
+                                            <option value="3">7000円</option>
+                                            <option value="4">8000円</option>
+                                            <option value="5">9000円</option>
+                                            <option value="6">10000円</option>
+                                            <option value="7">15000円</option>
+                                        </select>
+                                        <span>～</span>
+                                        <select name="tanka2">
+                                            <option value="0" selected="">気にしない</option>
+                                            <option value="1">6000円</option>
+                                            <option value="2">7000円</opti
+                                            <option value="3">8000円</option>
+                                            <option value="4">9000円</option>
+                                            <option value="5">10000円</option>
+                                            <option value="6">15000円</option>
+                                            <option value="7">15001円以上</option>
+                                        </select>
+                                    </div>
+                                    <div class="search_btn">
+                                        <input type="hidden" name="beg" value="">
+                                        <input type="submit" class="btn" name="cmdKensaku" value="空室検索" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <div class="desc-search">
+    <p class="">
+      フォーム内のパーツはflexboxで管理。flex-wrapをwrapにしておく。<br>
+      フォーム内各パーツの大きさは100px程度。
+    </p>
+    <p>
+      画面幅1200px以下のとき、空室検索の見出しを削除。
+    </p>
+    <p>
+      画面幅1024px以下のとき、flexboxの幅を420pxに変更。これによりフォームは2行になる。
+    </p>
+    <p>
+      画面幅768px以下のとき、flexboxの幅を270pxに変更。これによりフォームは3行になる。
+    </p>
+    <p>
+      1024pxの処理をやめて、1200pxに統一した方が楽かも。<br>
+      画面幅1200px以下のとき、空室検索の見出しを削除してflexboxの幅を420pxに変更。
+    </p>
+  </div>
+
+</body>
+</html>
