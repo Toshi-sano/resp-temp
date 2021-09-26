@@ -147,13 +147,13 @@ textarea {
   resize: vertical; /* Specify textarea resizability */
 }
 
-button,
+/* button,
 input,
 optgroup,
 select,
 textarea {
   font: inherit; /* Specify font inheritance of form elements */
-}
+} */
 
 optgroup {
   font-weight: bold; /* Restore the font weight unset by the previous rule */

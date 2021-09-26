@@ -160,5 +160,37 @@
     </p>
   </div>
 
+  <!-- 問い合わせフォーム -->
+  <section id="contact-form">
+    <h3 class="title2">お問い合わせ</h3>
+    <div class="inner2 contact">
+      <form method="post" action="mail.php">
+        <div class="item">
+          <label class="label">お名前</label><br>
+          <input class="inputs" type="text" name="お名前">
+        </div>
+        <div class="item">
+          <label class="label">電話番号</label><br>
+          <input class="inputs" type="tel" name="電話番号">
+        </div>
+        <div class="item">
+          <label class="label">メールアドレス</label><br>
+          <input class="inputs" type="email" name="Email">
+        </div>
+        <div class="item">
+          <label class="label">ご用件</label><br>
+          <input class="inputs" type="text" name="ご用件">
+        </div>
+        <div class="item">
+          <label class="label">お問い合わせ内容</label><br>
+          <textarea class="inputs" name="お問い合わせ内容"></textarea>
+        </div>
+        <div class="btn-area">
+          <input type="submit" value="送信内容を確認する"><input type="reset" value="リセット">
+        </div>
+      </form>
+    </div>
+  </section>
+
 </body>
 </html>

@@ -1,5 +1,125 @@
 @charset "UTF-8";
 
+html {
+  font-size: 100%;
+}
+body {
+    background: #FFF;
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 0.05em;
+    color: #3D3F45;
+    font-weight: 400;
+    text-align: left;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 170%;
+    font-feature-settings: "palt" 1;
+}
+section {
+    position: relative;
+    margin-top: 50px;
+}
+p {
+  margin: 25px 0;
+}
+.wrap {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 10;
+}
+.wrap-1200 {
+    max-width: 1200px;
+}
+.en {
+    font-family: 'Lato', sans-serif;
+}
+.row {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    zoom: 1;
+}
+.row:before, .row:after {
+    content: "";
+    display: table;
+}
+.row:after {
+    clear: both;
+}
+
+
+
+/* 問い合わせフォーム */
+button, input, select, textarea {
+  border: 1px solid #808080;
+  border-radius: 3px;
+  padding: 3px 3px;
+}
+#contact-form {
+  width: 900px;
+  max-width: 90%;
+  margin: 60px auto;
+}
+.title2 {
+  margin: 0 0 30px 0;
+  font-size: 1.5rem;
+}
+.contact textarea,
+.contact input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  border: solid 1px #aaa;
+  border-radius: 5px;
+  padding: 7px;
+  font-size: 15px;
+  width: 100%;
+}
+.contact .item {
+  overflow: hidden;
+  margin: 0 0 20px 0;
+}
+.contact textarea {
+  height: 8rem;
+}
+.contact input[type="submit"] {
+  background: #ee7800;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 30px 30px 0 0;
+  box-shadow: 0px 2px #463728;
+}
+.contact input[type="reset"] {
+  background: #aaa;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 30px 5px 0 0;
+  box-shadow: 0px 2px #463728;
+}
+@media screen and (max-width: 768px) {
+  .contact input[type="submit"] {
+    padding: 10px 20px;
+    margin: 30px 0 0 0;
+    width: 100%;
+  }
+  .contact input[type="reset"] {
+    margin: 30px 0 0 0;
+    width: 100%;
+  }
+}
+/* コピペここまで */
+
+
+
 /* ハンバーガーメニューとモーダル
 コピペここから */
 .mobile-nav {
@@ -161,57 +281,10 @@ header {
 }
 
 
-
-body {
-    background: #FFF;
-    font-family: 'Noto Sans JP', sans-serif;
-    letter-spacing: 0.05em;
-    color: #3D3F45;
-    font-weight: 400;
-    text-align: left;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    line-height: 170%;
-    font-feature-settings: "palt" 1;
-}
-section {
-    position: relative;
-    margin-top: 50px;
-}
-p {
-  margin: 25px 0;
-}
-.wrap {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    z-index: 10;
-}
-.wrap-1200 {
-    max-width: 1200px;
-}
-.en {
-    font-family: 'Lato', sans-serif;
-}
-.row {
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    zoom: 1;
-}
-.row:before, .row:after {
-    content: "";
-    display: table;
-}
-.row:after {
-    clear: both;
-}
-
+/* プラン検索窓 */
 .desc-search {
   padding: 50px 2.5%;
 }
-
 .search-wrap {
     position: relative;
     padding:40px 30px;
@@ -343,7 +416,7 @@ p {
 .plan_form .option-input:checked:before { -webkit-transform: rotate(-45deg) scale(1, 1); transform: rotate(-45deg) scale(1, 1);}
 .plan_form .option-input:after { position: absolute; top: -0.125rem; left: 0; width: 1rem; height: 1rem; content: ''; cursor: pointer; border: 2px solid #330301; background: #ffffff;}
 
-input{ height: 45px;}
+.search-wrap input{ height: 45px;}
 input[type="text"] {box-sizing: border-box;font-size: 12px;}
 select {box-sizing: border-box;font-size: 12px; height: 36px;}
 }
